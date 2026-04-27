@@ -33,6 +33,25 @@ In short:
 This work should therefore be read as an **extension and application** of the EPIGO
 idea framework, not a replacement or independent re‑implementation.
 
+## Implementation Notes & Extensions (MATLAB)
+
+The EPIGO.pdf document describes the conceptual and mathematical framework
+underlying this work (entropy, spectral structure, and signal-centric views
+of epigenomic tracks). The MATLAB analyses in this repository go beyond that
+formal description in several practical and exploratory ways.
+
+In particular, the MATLAB workflow:
+- explores multiple visualization strategies (state maps, sliding-window FFT
+  energy, large-scale heatmaps) that are not formalized in the EPIGO write‑up
+- experiments with windowed and local frequency summaries to probe spatial
+  heterogeneity along the genome
+- emphasizes empirical comparison between histone marks via signal behavior,
+  rather than defining a fixed comparison metric
+
+As a result, the figures here should be understood as **exploratory signal
+analyses built on the EPIGO framework**, rather than as a direct or complete
+implementation of the EPIGO pipeline described in the PDF.
+
 ## Data
 The analysis focuses on two histone modifications from the E071 cell type:
 - **H3K4me3** – commonly associated with promoters
