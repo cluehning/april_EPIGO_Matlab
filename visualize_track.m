@@ -1,7 +1,6 @@
 function visualize_track(track, analysis)
     x = track.signal(:);
 
-    %% ===== ORIGINAL FIGURE =====
     figure;
     subplot(3,1,1);
     plot(x, 'LineWidth', 1);
@@ -18,7 +17,7 @@ function visualize_track(track, analysis)
     heatmap(x(idx_hm));
     title('Signal Heatmap (sampled across genome)');
 
-    %% ===== COOL EXTENSION (SECOND FIGURE) =====
+    %% ===== EXTENSION (SECOND FIGURE) =====
     hasCool = isfield(analysis,'psd') && isfield(analysis,'tf') && ...
               isfield(analysis,'state') && isfield(analysis,'x') && ...
               isfield(analysis,'pos');

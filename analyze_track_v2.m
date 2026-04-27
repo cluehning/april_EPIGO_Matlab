@@ -39,16 +39,11 @@ function result = analyze_track_v2(track, opts)
         posN = (1:N)';
     end
 
-    % ============================================================
-    % OLD OUTPUTS (keep your existing FFT magnitude plot working)
-    % ============================================================
+    % OLD OUTPUTS (existing FFT magnitude plots)
     Xmag = abs(fft(xN));
     freq = linspace(0, 1, numel(Xmag));
 
-    % ============================================================
-    % COOL OUTPUTS (toolbox-free versions)
-    % ============================================================
-
+    % NEW OUTPUTS    
     % ---- PSD (toolbox-free): one-sided FFT power
     X = fft(xN);
     P2 = abs(X/N).^2;
