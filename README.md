@@ -2,6 +2,35 @@
 
 This project explores large-scale genomic signal structure using **signal processing techniques** applied to histone modification tracks. By combining time-domain, frequency-domain, and entropy-based analyses, the goal is to better understand global patterns and local complexity in epigenomic signals.
 
+## Project Lineage & Inspiration
+
+This project builds directly on ideas and visual frameworks developed in
+[march_EPIGO](https://github.com/cluehning/march_EPIGO).
+
+EPIGO approaches epigenetic tracks not as anonymous arrays of numbers, but as
+**structured signals** whose properties can be studied using information‑theoretic
+and spectral tools (entropy, FFTs, global vs. local structure). The core idea is to
+treat epigenomic data as something closer to a *composable object* than a flat dataset
+— an intuition often described in EPIGO as thinking in terms of LEGO bricks rather
+than raw values.
+
+### How this project builds on EPIGO
+
+While EPIGO provides the original conceptual framework and mathematical tools, this
+project focuses on:
+- applying those ideas **end‑to‑end to concrete histone mark tracks (E071)**
+- producing **clean, publication‑style visual summaries** rather than a general‑purpose codebase
+- emphasizing **signal‑processing viewpoints** (sliding FFT energy, global spectra,
+  entropy comparisons) as interpretive tools rather than abstractions
+
+In short:
+- **EPIGO** asks *how should we think about epigenetic signals?*
+- **This project** asks *what do those ideas reveal when we actually look at real
+  tracks in detail?*
+
+This work should therefore be read as an **extension and application** of the EPIGO
+idea framework, not a replacement or independent re‑implementation.
+
 ## Data
 The analysis focuses on two histone modifications from the E071 cell type:
 - **H3K4me3** – commonly associated with promoters
