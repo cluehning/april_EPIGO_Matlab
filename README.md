@@ -63,5 +63,3 @@ For each signal, the following analyses were performed:
 ## Motivation
 This project treats epigenomic data as a **signal processing problem**, offering an alternative perspective to classical peak-based or annotation-driven analyses.
 
-## Status
-April project – exploratory analysis and visualization.
