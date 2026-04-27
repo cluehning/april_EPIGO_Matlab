@@ -1,4 +1,6 @@
-# Signal & Frequency Analysis of Histone Marks (E071)
+# EPIGO | Signal & Frequency Analysis of Histone Marks (E071)
+**Epigenetic Information Geometry Observatory**  
+*(or: Epigenetics, built like LEGO)*
 
 This project explores large-scale genomic signal structure using **signal processing techniques** applied to histone modification tracks. By combining time-domain, frequency-domain, and entropy-based analyses, the goal is to better understand global patterns and local complexity in epigenomic signals.
 
